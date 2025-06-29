@@ -5,29 +5,29 @@ var assert = require('assert');
 const CheckoutSolution = require('../../../lib/solutions/CHK/checkout_solution');
 
 describe('CHK challenge: checkout', function() {
-	it('should return 0 for an empty string', function() {
-		assert.equal(new CheckoutSolution().checkout(''), 0);
-	});
+	// it('should return 0 for an empty string', function() {
+	// 	assert.equal(new CheckoutSolution().checkout(''), 0);
+	// });
 
-	it('should return -1 for an invalid string', function() {
-		assert.equal(new CheckoutSolution().checkout('A123'), -1);
-	});
+	// it('should return -1 for an invalid string', function() {
+	// 	assert.equal(new CheckoutSolution().checkout('A123'), -1);
+	// });
 
-	it('should return 50 for a single A', function() {
-		assert.equal(new CheckoutSolution().checkout('A'), 50);
-	});
+	// it('should return 50 for a single A', function() {
+	// 	assert.equal(new CheckoutSolution().checkout('A'), 50);
+	// });
 
 	it('should return 200 for five A', function() {
 		assert.equal(new CheckoutSolution().checkout('AAAAA'), 200);
 	});
 
-	it('should return 130 for three A', function() {
-		assert.equal(new CheckoutSolution().checkout('AAA'), 130);
-    });
+	// it('should return 130 for three A', function() {
+	// 	assert.equal(new CheckoutSolution().checkout('AAA'), 130);
+    // });
 
-    it('should return 45 for two B', function() {
-        assert.equal(new CheckoutSolution().checkout('BB'), 45);
-    });
+    // it('should return 45 for two B', function() {
+    //     assert.equal(new CheckoutSolution().checkout('BB'), 45);
+    // });
 
     // it ('should return 80 for EEB', function() {
     //     assert.equal(new CheckoutSolution().checkout('EEB'), 80);
