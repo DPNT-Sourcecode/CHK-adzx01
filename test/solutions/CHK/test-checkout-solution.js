@@ -37,4 +37,8 @@ describe('CHK challenge: checkout', function() {
         assert.equal(new CheckoutSolution().checkout('FFF'), 20);
     });
     
+    it ('should return 30 for FFFF', function() {
+        assert.equal(new CheckoutSolution().checkout('FFFF'), 30);
+    });
+    
 });
