@@ -62,7 +62,11 @@ describe('CHK challenge: checkout', function() {
     });
 
     it ('should return 195 for STXKK', function() {
-        assert.equal(new CheckoutSolution().checkout('STXKK'), 195);
+        assert.equal(new CheckoutSolution().checkout('STXKK'), 165);
+    });
+
+    it ('should return 65 for SSSZ', function() {
+        assert.equal(new CheckoutSolution().checkout('SSSZ'), 65);
     });
     
 });
